@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+}
+
+html {
+  /* 禁止修改此数值，大量rem依赖此数值计算，如需修改默认字号，去改 body 的 */
+  font-size: 16px !important;
+  font-family: "Barlow-Regular";
+}
+
+
+/* 字体配置 */
+// @font-face {
+//   font-family: "Barlow-Medium";
+//   src: url('../font/Barlow-Medium.otf');
+// }
+
+@font-face {
+  font-family: "Barlow-Regular";
+  src: url('../font/Barlow-Regular.otf');
+}
+
+.border-half-px::before {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom-width: 1px;
+  transform-origin: 0 0;
+  transform: scaleY(0.5);
+}

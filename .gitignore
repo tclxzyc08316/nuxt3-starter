@@ -1,0 +1,9 @@
+node_modules
+*.log
+dist
+lottery
+marketing
+.output
+.nuxt
+.vercel
+.env
